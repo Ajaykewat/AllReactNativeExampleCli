@@ -11,6 +11,7 @@ import {
   ImageObject,
 } from '@georstat/react-native-image-gallery';
 import { images } from './help';
+import ImageZoom from 'react-native-image-pan-zoom';
 
 
 CacheManager.config = {
