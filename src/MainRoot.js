@@ -18,8 +18,11 @@ import MultiSelectCheckBox from './MultiSelectCheckBox';
 import MultiSelectItem from './MultiSelectItem';
 import GlassmorphedScreen from './GlassmorphedScreen';
 import Movie from './MovieScreen/Movie';
+import ImagePickerScreen from './ImagePickerScreen/ImagePickerScreen'
 import Favorites from './MovieScreen/Favorites';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import VideoScreen from './ImagePickerScreen/VideoScreen';
+import LongPressMultiSelect from './GalleryScreen/LongPressMultiSelect';
 
 
 
@@ -30,16 +33,19 @@ const MainRoot = () => {
     <Provider store={store}>
     <NetworkProvider>
     <NavigationContainer>
-        <Stack.Navigator initialRouteName='Tab'>
+        <Stack.Navigator initialRouteName='LongPressMultiSelect'>
         <Stack.Screen name="Tab" component={TabScreen} options={{headerShown:false}} />
         <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="ImagePickerScreen" component={ImagePickerScreen} />
         <Stack.Screen name="Slider" component={Slider} />
+        <Stack.Screen name="VideoScreen" component={VideoScreen} />
         <Stack.Screen name="ImageCarousalSlider" component={ImageCarousalSlider} />
         <Stack.Screen name="ImageDownload" component={ImageDownload} />
         <Stack.Screen name="ImageLoadingProgress" component={ImageLoadingProgress} />
         <Stack.Screen name="MultiSelectCheckBox" component={MultiSelectCheckBox} />
         <Stack.Screen name="MultiSelectItem" component={MultiSelectItem} />
         <Stack.Screen name="GlassmorphedScreen" component={GlassmorphedScreen} />
+        <Stack.Screen name="LongPressMultiSelect" component={LongPressMultiSelect} />
       </Stack.Navigator>
     </NavigationContainer>
     </NetworkProvider>

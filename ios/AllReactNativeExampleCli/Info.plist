@@ -37,6 +37,19 @@
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
+	<!-- start Photo permission -->
+	<key>NSPhotoLibraryUsageDescription</key>
+
+    <string>$(PRODUCT_NAME) would like access to your photo gallery</string>
+
+    <key>NSCameraUsageDescription</key>
+
+    <string>$(PRODUCT_NAME) would like to use your camera</string>
+
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>$(PRODUCT_NAME) would like to your photo gallery</string>
+
+	<!--end Photo permission -->
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
